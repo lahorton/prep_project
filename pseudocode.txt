@@ -1,0 +1,75 @@
+"""
+Tinder Profile Generator
+
+Start w/ a set of functions that answer the basic questions, then make
+a master function that contains/runs the others.  Start w/ just
+asking questions and entering into a format in the master function.
+Then, if there's time- get creative w/ it.
+
+Basic rules:
+-one player
+-player provides input which is used to create profile
+-program provides format & fun flair depending on player input.
+-End result is a short profile for online dating
+
+Nice to have:
+-basic info on player 
+	*name, age, basics of who they’re looking for
+	*Interests (hobbies, music, food, etc…)
+	*Physical descriptions & what they want.
+	*multiple fun formats to fit it into (like a choose your own 	adventure).
+	*A word/character limit so it has to end sometime.
+	*Something to detect BS (bad answers).
+
+Workflow:
+-ask the user for basic info
+-ask a few more personal questions to determine which profile template to run.
+-based on that profile template, ask the questions needed to complete that profile.
+-Once it’s complete- print the profile for the player.
+
+Data to keep track of:
+-player responses
+-flow of how to get to which template
+"""
+#First, we're going to get info about the user and his/her/thier interests
+
+def gets_user_name(name):
+    """gets the user's name"""
+    raw_input = ("What's your name? ")
+    return name
+
+def gets_user_age(age):
+    """gets user's age"""
+    raw_input = ("What's your age? ")
+    return age
+
+def gets_user_gender(gender):
+    """gets user's gender"""
+    raw_input = ("What gender do you idenify as?" )
+    return gender
+
+def gets_user_interests(interests):
+    """gets user's interests"""
+    raw_input = ("Tell us about yourself.  What are your intersts?  ")
+    return interests
+    
+#Now, we're going to get info about who they want to date
+
+def gets_mate_gender(mate_gender):
+    """gets the preferred gender of date"""
+    raw_input = ("Who do you want to date - male, female, trans or not important..." )
+    return mate_gender
+
+def gets_mate_age(mate_age):
+    """gets the preferred age of date"""
+    raw_input = ("What age range do you prefer to date? )
+    return mate_age
+
+def gets_desired_rel(rel_length):
+    """gets desired typle/length of relationship"""
+    raw_input = ("What type of relationship are you looking for?  Choose from: (L) long-term, (S) short-term, (P) poly, or (A) any)
+    return rel_length
+
+def runs_profile_generator:
+    """master function that will call on the other functions to create a profile"""
+    
